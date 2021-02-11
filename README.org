@@ -1,0 +1,20 @@
+# -*- mode: org; -*-
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+#+OPTIONS: num:nil ^:nil \n:t H:6
+#+TITLE: WeatherApp
+
+
+React WeatherApp because google's weather app is too mainstream.
+
+with Air Quality Index :D Cause why not :P 
+
+** Demo
+
+Link: https://weather-app-808.herokuapp.com/
+
+Screenshot:
+
+ [[./docs/images/screenshot.png]]
+
+** License
+   [[https://choosealicense.com/licenses/mit/][MIT]]

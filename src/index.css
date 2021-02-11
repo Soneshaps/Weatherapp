@@ -1,0 +1,285 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+
+body {
+  font-family: "Comfortaa";
+}
+
+.main {
+  background-color: #f6f6f8;
+}
+
+.weather-overlay {
+  position: absolute !important;
+  background-color: #fff;
+  z-index: 2;
+}
+
+.display-none {
+  display: none;
+}
+
+.search-overlay {
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.search-overlay img {
+  height: 300px;
+  width: auto;
+}
+
+.search-overlay input {
+  font-size: 1.5rem;
+  height: 40px;
+  text-align: center;
+  width: 50%;
+}
+
+@media screen and (max-width: 766px) {
+  .weather-overview-inner {
+    text-align: center;
+  }
+  .searchTerm {
+    text-align: center;
+  }
+  .search-overlay input {
+    width: 80%;
+  }
+}
+
+.weather-overview {
+  background-color: #fff;
+  height: 100vh;
+  z-index: 1;
+  box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.weather-overview-inner-row {
+  display: flex;
+  flex-direction: column;
+}
+.weather-detail {
+  background-color: #f6f6f8;
+  height: 100vh;
+}
+
+.searchTerm {
+  border: 0px;
+  border-bottom: 1px solid #cccccc;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.weather-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.weather-info-pic {
+  height: 250px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.weather-info-pic img {
+  height: 250px;
+  width: auto;
+}
+.weather-info-degre {
+  font-size: 5rem;
+}
+
+.search {
+  margin-top: 1rem;
+}
+
+.weather-info-date {
+  padding-top: 0.5rem;
+  font-size: 1.6rem;
+  padding-left: 0.5rem;
+  font-weight: bold;
+}
+
+.weather-info-date span {
+  color: #cdcdcd;
+}
+
+.weather-info-detail {
+  font-size: 1.4rem;
+  padding: 3.5rem 0 3.5rem 0;
+}
+
+.weather-info-detail img {
+  height: 4rem;
+}
+
+.weather-info-place {
+  text-align: center;
+  line-height: 4.5rem;
+  font-weight: bold;
+  font-size: 2.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.weather-info-place-outer {
+  height: 4.5rem;
+  width: auto;
+  background-color: #cdcdcd;
+  border-radius: 10px;
+}
+
+.weather-detail-header {
+  margin: 1.5rem 0 1.5rem 0;
+}
+
+.weather-detail-week-text {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+/* .weather-detail-toggle {
+} */
+
+.weather-detail-days {
+  margin-top: 1.5rem;
+}
+.weather-detail-days-inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 500px) {
+  .weather-detail-day-style {
+    flex: 1 0 30% !important;
+    background-color: black;
+  }
+  .sun-time {
+    font-size: 14px !important;
+  }
+}
+.weather-detail-day-style {
+  flex: 1;
+  margin-right: 1rem;
+  background-color: #fff;
+  float: left;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 0.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.weather-detail-day-style:last-child {
+  margin-right: 0px;
+}
+
+.weather-detail-day-style-min {
+  color: #cdcdcd;
+}
+
+.weather-detail-day-style-day {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.weather-detail-bottom-header {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.weather-detail-bottom-detail {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.weather-detail-bottom-detail-style {
+  flex: 1 0 30%;
+  height: 12.6rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  background-color: #fff;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 767px) {
+  .weather-detail-bottom-detail-style {
+    flex: 1 0 40%;
+  }
+}
+
+.weather-detail-bottom-detail-style span {
+  font-size: 1.5rem;
+  color: #cdcdcd;
+}
+
+.weather-detail-bottom-value {
+  font-size: 2.5em;
+  text-align: center;
+  line-height: 100px;
+}
+
+.weather-detail-bottom-value span {
+  font-size: 2rem;
+  color: #000;
+}
+
+.sun-status {
+  display: flex;
+  flex-direction: column;
+}
+
+.sun-status-detail {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.sun-status-img {
+  height: 50px;
+  float: left;
+  padding-right: 10px;
+}
+
+.sun-status-img img {
+  height: 50px;
+  width: auto;
+}
+
+.sun-value {
+  float: left;
+}
+
+.sun-time {
+  font-size: 20px;
+  letter-spacing: 1px;
+  height: 50px;
+  line-height: 50px;
+}
+
+@media screen and (max-width: 1000px) {
+  .sun-time {
+    font-size: 17px;
+  }
+}
+
+.weather-detail-day-style-description {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
